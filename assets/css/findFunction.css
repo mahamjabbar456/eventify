@@ -1,0 +1,149 @@
+.specificPackage {
+    padding: 9rem 7% 3rem;
+}
+
+.box1 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.functionPackage {
+    padding: 2rem;
+    background: #444;
+    border-radius: 15px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid #555;
+}
+
+.functionPackage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    background: #3a3a3a; 
+}
+
+/* Image Section */
+.functionPackage .left {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.functionPackage .left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.functionPackage:hover .left img {
+    transform: scale(1.03);
+}
+
+.functionPackage .right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.functionPackage .right h2 {
+    font-size: 2.2rem;
+    color: #fff; 
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.functionPackage .right h2 span {
+    font-size: 1.8rem;
+    color: var(--main-color); 
+    font-weight: 600;
+}
+
+.functionPackage .right h4 {
+    font-size: 1.6rem;
+    color: #ddd; 
+    margin: 1.5rem 0 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #555; 
+}
+
+.functionPackage .right ul {
+    margin-bottom: 1.5rem;
+}
+
+.functionPackage .right ul li {
+    font-size: 1.4rem;
+    color: #ccc; 
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.functionPackage .right ul li i {
+    color: var(--main-color); 
+    margin-right: 1rem;
+    min-width: 1.8rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.functionPackage .right ul li strong {
+    color: #eee;
+    margin-right: 0.5rem;
+    font-weight: 600;
+}
+
+.functionPackage .right .menu ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.functionPackage .right .menu ul li {
+    background: #3a3a3a; 
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border-left: 3px solid var(--main-color); 
+}
+
+.functionPackage .right .menu ul li:hover {
+    background: #333; 
+    transform: translateX(5px);
+}
+
+.functionPackage .right .btn{
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .functionPackage {
+        flex-direction: column;
+    }
+    
+    .functionPackage .left,
+    .functionPackage .right {
+        width: 100%;
+    }
+    
+    .functionPackage .left img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .functionPackage .right .menu ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .specificPackage {
+        padding: 16rem 3% 2rem;
+    }
+}

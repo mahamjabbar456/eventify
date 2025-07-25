@@ -1,0 +1,56 @@
+.registerHallForm{
+    padding: 10rem 0 5rem 0;
+    margin: 0 auto; 
+    max-width: 800px; 
+    width: 90%; 
+}
+
+.contact{
+    padding: 2rem;
+    border: 2px solid #333;
+    border-radius: 0.5rem;
+    background: #222;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.registerHallForm .form-group {
+    /* margin: 0 auto 1.5rem auto; */
+    margin-bottom: 1.5rem;
+}
+
+.registerHallForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.registerHallForm input[type="text"],
+.registerHallForm input[type="number"],
+.registerHallForm input[type="tel"],
+.registerHallForm input[type="file"],
+.registerHallForm textarea {
+    text-transform: none;
+    width: 100%;
+    padding: 1rem;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.registerHallForm input:focus,
+.registerHallForm select:focus,
+.registerHallForm textarea:focus {
+    background: #444;
+    border-color: var(--main-color);
+    outline: none;
+}
+
+.registerHallForm .text-muted{
+    /* padding-top: 0.5rem; */
+    font-size: 1.3rem;
+}

@@ -1,0 +1,73 @@
+.booking-confirmation{
+    padding-top: 9rem;
+}
+
+.booking-summary{
+    width: 400px;
+    border: 1px solid #444;
+    background-color: #333;
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+}
+
+h3{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.summary-details {
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    /* border-bottom: 1px solid #eee; */
+}
+
+.detail-label {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.detail-value {
+    color: #666;
+    text-align: right;
+}
+
+.payment-options{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.custom-package-notice p{
+    font-size: 1.6rem;
+    padding: 10px 0 20px 0;
+}
+
+.form-group{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.form-group label img{
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.form-group label{
+    font-size: 1.5rem;
+}

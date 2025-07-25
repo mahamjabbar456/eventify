@@ -1,0 +1,62 @@
+.contact{
+    padding: 10rem 9% 2rem 9%;
+}
+
+.contact-box{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left iframe{
+    padding: 10px 10px;
+    width: 550px;
+    height: 470px;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+    width: 100%;
+    background: #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .7rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder{
+    color: #eee;
+    text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus{
+    background: #444;
+}
+
+.contact form .inputBox input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}

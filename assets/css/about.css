@@ -1,0 +1,97 @@
+:root{
+    --main-color: #3867d6;
+}
+
+.about{
+    padding: 10rem 9% 2rem 9%;
+}
+
+.mvv-container{
+    max-width: 90%;
+    margin: 50px 9%;
+}
+
+.mvv-container .mvv-block{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mvv-container .mvv-block .image{
+    flex: 0 0 auto;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    line-height: 0;
+}
+
+.mvv-container .mvv-block .image img{
+    width: 100%;
+    transition: .3s;
+    transform: scale(1);
+}
+
+.mvv-container .mvv-block .image:hover img{
+    transform: scale(1.05);
+}
+
+.mvv-container .mvv-block .content{
+    flex: 0 0 auto;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.mvv-container .mvv-block .content h5{
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.mvv-container .mvv-block .content p{
+    text-transform: none;
+    font-size: 15px;
+    color: white;
+    text-align: justify;
+}
+
+@media screen and (min-width: 1024px){
+    .mvv-container .mvv-block:nth-child(odd) .image{
+        order: 1;
+    }
+    .mvv-container .mvv-block:nth-child(even) .image{
+        order: 2;
+    }
+    .mvv-container .mvv-block:nth-child(odd) .content{
+        order: 2;
+        padding-left: 30px;
+    }
+    .mvv-container .mvv-block:nth-child(even) .content{
+        order: 1;
+        padding-right: 30px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px){
+
+    .mvv-container .mvv-block .image{
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .mvv-container .mvv-block .image{
+        padding-right: 50px;
+    }
+    
+    .mvv-container .mvv-block .content{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

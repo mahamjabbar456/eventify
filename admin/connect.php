@@ -1,6 +1,6 @@
 <?php
 
-$con = new mysqli('localhost','root','','eventplannersystem');
+$con = new mysqli('','','','eventplannersystem');
 
 if(!$con){
     die(mysqli_error($con));

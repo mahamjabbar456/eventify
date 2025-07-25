@@ -32,8 +32,8 @@ if(isset($_POST['submit'])) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'eventifywebsite012@gmail.com';
-            $mail->Password   = 'bfni fpwv rbdl dmkc';
+            $mail->Username   = '';
+            $mail->Password   = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
             $mail->setFrom('eventifywebsite012@gmail.com', 'Eventify');

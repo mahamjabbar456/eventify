@@ -193,8 +193,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['confirm_booking'])) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = "eventifywebsite012@gmail.com";
-        $mail->Password = "bfni fpwv rbdl dmkc";
+        $mail->Username = "";
+        $mail->Password = "";
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         
